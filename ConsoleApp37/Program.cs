@@ -26,6 +26,9 @@ namespace ConsoleApp37
             tokenDescriptor.Claims["tenant-id"] = "t-id-1";
             var token = tokenHandler.CreateToken(tokenDescriptor);
             Console.WriteLine(tokenHandler.WriteToken(token));
+            Console.WriteLine();
+
+            Console.WriteLine("you can parce token and check content on th e web site: https://jwt.io/");
         }
     }
 }
